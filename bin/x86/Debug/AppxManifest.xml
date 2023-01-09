@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    ESTE ARCHIVO DE MANIFIESTO DEL PAQUETE SE GENERA MEDIANTE EL PROCESO DE COMPILACIÓN.
+
+    Los cambios realizados en el archivo se perderán al regenerarlo. Para corregir los errores de este archivo, edite el archivo de origen .appxmanifest.
+
+    Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="96ebbcdf-cd91-474f-8353-a5e24c8a30e7" Publisher="CN=alejo" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="96ebbcdf-cd91-474f-8353-a5e24c8a30e7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>ProgiTest</DisplayName>
+    <PublisherDisplayName>alejo</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.22000.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="ES-ES" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="ProgiTest.exe" EntryPoint="ProgiTest.App">
+      <uap:VisualElements DisplayName="ProgiTest" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="ProgiTest" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="17.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2022" />
+    <build:Item Name="OperatingSystem" Version="10.0.22621.1 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.4.33122.133" />
+    <build:Item Name="ProjectGUID" Value="{4DBF9A95-5C56-492E-8E5F-4CFA21A421F3}" />
+    <build:Item Name="OptimizingToolset" Value="None" />
+    <build:Item Name="TargetRuntime" Value="Managed" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="17.0.33118.351" />
+    <build:Item Name="MakePri.exe" Version="10.0.22000.832 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>

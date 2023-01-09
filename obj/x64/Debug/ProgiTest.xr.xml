@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="BudgetModel" />
+    <RootPropertyPathName Name="Storage" />
+    <RootPropertyPathName Name="Association" />
+    <RootPropertyPathName Name="Special" />
+    <RootPropertyPathName Name="Basic" />
+    <RootPropertyPathName Name="MaximumVehiculeAmount" />
+    <RootPropertyPathName Name="NewBudget" />
+    <RootPropertyPathName Name="BudGetCalculateCommand" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="ProgiTest.Converters.NullableValueConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="IsReadOnly" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Command" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="ProgiTest.MainPage" />
+  </Roots.RootTypes>
+</Roots>

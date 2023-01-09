@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="ProgiTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProgiTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Converter="using:ProgiTest.Converters"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        
+        <ResourceDictionary>
+            <Converter:NullableValueConverter x:Key="NullConverter" />
+        </ResourceDictionary>
+       
+    </Page.Resources>
+    <Grid Margin="0,0,4,8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" >
+            <TextBox Background="White" Header="Budget" Height="70" Width="200" HorizontalAlignment="Left" Margin="0, 20, 0, 20" Foreground="Black" 
+                     Text="{x:Bind BudgetViewModel.BudgetModel.Budget, Mode=TwoWay, Converter={StaticResource NullConverter}}"/>
+            <Button Content="Calculate Budget" Width="200" Command="{Binding BudGetCalculateCommand}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Background="White" Header="Budget" Height="70" Width="200" HorizontalAlignment="Left" Margin="0, 20, 0, 20" Foreground="Black" 
+                     Text="{Binding BudgetModel.NewBudget}"/>
+            <TextBox Background="White" Header="Maximun Vehicule amount" Height="70" Width="200" HorizontalAlignment="Left" Margin="0, 20, 0, 20" Foreground="Black" 
+                     Text="{Binding BudgetModel.MaximumVehiculeAmount, Mode=TwoWay}"/>
+            <TextBox Background="White" Header="Basic" Height="70" Width="200" HorizontalAlignment="Left" Margin="0, 20, 0, 20" Foreground="Black"
+                     Text="{Binding BudgetModel.Basic, Mode=TwoWay}"/>
+            <TextBox Background="White" Header="Special" Height="70" Width="200" HorizontalAlignment="Left" Margin="0, 20, 0, 20" Foreground="Black"
+                     Text="{Binding BudgetModel.Special, Mode=TwoWay}"/>
+            <TextBox Background="White" Header="Association" Height="70" Width="200" HorizontalAlignment="Left" Margin="0, 20, 0, 20" Foreground="Black"
+                     Text="{Binding BudgetModel.Association, Mode=TwoWay}"/>
+            <TextBox Background="White" Header="Storage" Height="70" Width="200" HorizontalAlignment="Left" Margin="0, 20, 0, 20" IsReadOnly="True" Foreground="Black"
+                     Text="{Binding BudgetModel.Storage, Mode=TwoWay}"/>
+        </StackPanel>
+       
+    </Grid>
+</Page>
